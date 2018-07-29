@@ -3,7 +3,7 @@
   "PORT": "3000",
   "BASE_URL": "http://127.0.0.1:3000/",
   "API_URL": "http://127.0.0.1:3000/api/",
-  "MONGO_URL": "mongodb://127.0.0.1:27017/MERNjs",
+  "MONGO_URL": "mmongodb://senbodicloudadmin:shenBao1902@ds036079.mlab.com:36079/MERNjs",
   "JWT": {
     "SECRET": "MERNjsJsonWebTokenSecret",
     "EXPIRES": "24h"
