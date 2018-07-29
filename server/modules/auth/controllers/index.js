@@ -47,7 +47,7 @@ export function authenticateUser(req, res) {
       } else {
         // if user is found and password is right
         // create a token
-        const token = jwt.sign(user, config.get('JWT.SECRET'), {
+        const token = jwt.sign(user.toJSON(), config.get('JWT.SECRET'), {
           expiresIn: config.get('JWT.EXPIRES'),
         });
 

@@ -3,6 +3,9 @@ import express from 'express';
 import authRoutes from './modules/auth/routes/index.js';
 import userRoutes from './modules/users/routes/index.js';
 import blogRoutes from './modules/blogs/routes/index.js';
+import appUserRoutes from './modules/app_user/routes/index.js';
+import measureCategoryRoutes from './modules/measure_category/routes/index.js';
+import measureItemRoutes from './modules/measure_item/routes/index.js';
 
 let router = express.Router();
 
@@ -16,6 +19,9 @@ router.get('/', function (req, res, next) {
 router.use('/auth', authRoutes);
 router.use('/users', userRoutes);
 router.use('/blogs', blogRoutes);
+router.use('/app_user', appUserRoutes);
+router.use('/measure_category', measureCategoryRoutes);
+router.use('/measure_item', measureItemRoutes);
 
 // catch 404 and forward to error handler
 router.use(function (req, res, next) {
